@@ -58,7 +58,6 @@ module.exports = {
     return encoded
   },
   decode: function (str) {
-    if (!this.isUnique(str)) throw new Error('String must contain all unique characters')
     var _decoded = 0
     var _base = this.alphabet.length
     while (str) {
