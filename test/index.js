@@ -64,6 +64,11 @@ describe ('#baseConvert', function () {
         expect (result).to.be.false
   })
 
+  it ('randomizeAlphabet() should return a string', function() {
+        var result = baseConvert.randomizeAlphabet()
+        expect (result).to.be.a.string
+  })
+
 
 
 
