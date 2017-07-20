@@ -3,9 +3,10 @@
 module.exports = {
   alphabet: '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ',
 
-  setAlphabet: function (str) {
+  setAlphabet: function (str = this.alphabet) {
     if (!this.isUnique(str)) throw new Error('String must contain all unique characters')
     this.alphabet = str
+    return this.alphabet
   },
   getAlphabet: function () {
     return this.alphabet
