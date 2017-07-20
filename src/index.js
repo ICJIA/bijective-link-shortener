@@ -2,10 +2,6 @@
 
 module.exports = {
   alphabet: '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ',
-  // test: function(str='null') {
-  //     console.log('var is', this.myvar);
-  //     console.log('fn input is', str);
-  // },
   setAlphabet: function (str) {
     this.alphabet = str
   },
