@@ -1,6 +1,10 @@
 # bijective-link-shortener
 [![Build Status](https://travis-ci.org/ICJIA/bijective-link-shortener.svg?branch=master)](https://travis-ci.org/ICJIA/bijective-link-shortener)
-[![Coverage Status](https://coveralls.io/repos/github/ICJIA/bijective-link-shortener/badge.png?branch=master)](https://coveralls.io/github/ICJIA/bijective-link-shortener?branch=master)
+
+
+[![Coverage Status](https://coveralls.io/repos/github/ICJIA/bijective-link-shortener/badge.svg?branch=master)](https://coveralls.io/github/ICJIA/bijective-link-shortener?branch=master)
+
+
 ![Dependencies](https://david-dm.org/ICJIA/bijective-link-shortener.svg)
 
 Bijective encode and decode functions to convert between Base 10 and Base 58 (default). I'm using this for a link shortener.
