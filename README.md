@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/ICJIA/bijective-link-shortener.svg?branch=master)](https://travis-ci.org/ICJIA/bijective-link-shortener)
 
 
-[![Coverage Status](https://coveralls.io/repos/github/ICJIA/bijective-link-shortener/badge.svg?branch=master)](https://coveralls.io/github/ICJIA/bijective-link-shortener?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/ICJIA/bijective-link-shortener/badge.png?branch=master)](https://coveralls.io/github/ICJIA/bijective-link-shortener?branch=master)
 
 
 ![Dependencies](https://david-dm.org/ICJIA/bijective-link-shortener.svg)
@@ -26,13 +26,13 @@ npm install bijective-link-shortener -S
 
 The default alphabet can be set manually and/or randomized. See API below.
 
-## Basic Usage
+## Basic Usage with default encoding alphabet
 ```
 const baseConvert = require('bijective-link-shortener')
 
 const databaseId = 2347247
 
-baseConvert.encode(databaseId) // d2KM
+baseConvert.encode(databaseId) // 'd2KM'
 
 baseConvert.decode('d2KM') // 2347247
 ```
