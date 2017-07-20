@@ -5,7 +5,7 @@ var baseConvert = require('../src/index.js')
 const random = require('random-js')()
 
 describe ('#baseConvert', function () {
-  it ('encode() should return a string', function() {
+  it ('encode should return a string', function() {
         var result = baseConvert.encode(1234)
         expect (result).to.be.string
   })
