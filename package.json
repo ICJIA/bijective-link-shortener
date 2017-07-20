@@ -4,7 +4,7 @@
   "description": "Base conversion module to shorten Base 10 numbers to Base 58 (or any other base).",
   "main": "src/index.js",
   "directories": {
-    "test": "test"
+    "test": "tests"
   },
   "dependencies": {},
   "devDependencies": {
