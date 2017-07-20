@@ -1,0 +1,35 @@
+{
+  "name": "bijective-link-shortener",
+  "version": "0.0.1",
+  "description": "Base conversion module to shorten Base 10 numbers to Base 58 (or any other base).",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint ./src && eslint ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICJIA/bijective-link-shortener.git"
+  },
+  "author": "Chris Schweda <cschweda@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ICJIA/bijective-link-shortener.git/issues"
+  },
+  "homepage": "https://github.com/ICJIA/bijective-link-shortener.git#readme"
+}
