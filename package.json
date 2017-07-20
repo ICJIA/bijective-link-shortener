@@ -4,10 +4,11 @@
   "description": "Base conversion module to shorten Base 10 numbers to Base 58 (or any other base).",
   "main": "src/index.js",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "dependencies": {},
   "devDependencies": {
+    "chai": "^4.1.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.2",
     "eslint-config-standard": "^10.2.1",
@@ -16,10 +17,11 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.1.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.4.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --reporter spec",
     "eslint": "eslint ./src && eslint ./test"
   },
   "repository": {

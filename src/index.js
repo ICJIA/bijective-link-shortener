@@ -4,6 +4,7 @@ module.exports = {
   alphabet: '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ',
 
   setAlphabet: function (str) {
+    if (!this.isUnique(str)) throw new Error('String must contain all unique characters')
     this.alphabet = str
   },
   getAlphabet: function () {
@@ -17,6 +18,18 @@ module.exports = {
   },
   isPositive: function (num) {
     return (num > 0)
+  },
+  isUnique: function (str = this.alphabet) {
+    var obj = {}
+    for (var z = 0; z < str.length; ++z) {
+      var ch = str[z]
+      if (obj[ch]) {
+        return false
+      } else {
+        obj[ch] = true
+      }
+    }
+    return true
   },
   randomizeAlphabet: function () {
     var shuffled = this.alphabet.split('').sort(function () { return 0.5 - Math.random() }).join('')
@@ -44,6 +57,7 @@ module.exports = {
     return encoded
   },
   decode: function (str) {
+    if (!this.isUnique(str)) throw new Error('String must contain all unique characters')
     var _decoded = 0
     var _base = this.alphabet.length
     while (str) {
