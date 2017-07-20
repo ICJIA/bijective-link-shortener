@@ -69,15 +69,21 @@ describe ('#baseConvert', function () {
         expect (result).to.be.a.string
   })
 
-  it ('Encode random ID. Decode result. Result of decode should equal random ID. If not, push into errors array. At the end of 5000 iterations, errors.length should equal 0 ', function() {
+
+  it ('encode() throws error with a negative number', function() {
+        expect(() => baseConvert.encode(-33)).to.throw(Error)
+  })
+
+  it ('encode() throws error with a non-integer', function() {
+        expect(() => baseConvert.encode(2.5)).to.throw(Error)
+  })
+
+  it ('Encode random ID. Decode result. Result of decode should equal random ID. 5000 iterations', function() {
 
     var iterations = 5000
     var randomIds = Array.from({length: iterations}, () => random.integer(1000,999999));
     var slugs = []
     var decodedIds = []
-    var errors = []
-    var matches = []
-
     for (let i = 0, len = iterations; i < len; i++) {
       slugs.push(baseConvert.encode(randomIds[i]));
       decodedIds.push(baseConvert.decode(slugs[i]));
