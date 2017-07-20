@@ -36,16 +36,15 @@ baseConvert.decode('d2KM') // 2347247
 
 ```baseConvert.decode(str)```: Returns ```integer```. Decodes a given string value (such as a short URL string) into a number based on the selected encoding alphabet.
 
-```baseConvert.setAlphabet(str)```: Returns ```string```. Assign a new encoding alpahbet and echoes it back. Confirms letters are unique/not-repeated
-
+```baseConvert.setAlphabet(str)```: Returns ```string```. Assign a new encoding alpahbet and echoes it back. 
 ```baseConvert.getAlphabet()```: Returns ```string```. Current encoding alphabet.
 
 ```baseConvert.getBase()```: Returns ```integer```. The length of current encoding alphabet. For example, a 58 character encoding alphabet equals a Base 58 conversion. A 33 character encoding equals a Base 33 conversion.
 
-```baseConvert.isInteger(num)```: Returns ```boolean```. Indicates whether a given number is an integer. Confirms ```baseConvert.encode(num)``` number is valid.
+```baseConvert.isInteger(num)```: Returns ```boolean```. Indicates whether a given number is an integer.
 
-```baseConvert.isPositive(num)```: Returns ```boolean```. Indicates whether a given number is positive. Confirms  ```baseConvert.encode(num)``` number is valid.
+```baseConvert.isPositive(num)```: Returns ```boolean```. Indicates whether a given number is positive.
 
-```baseConvert.isUnique(str)```: Returns ```boolean```.  Indicates whether given string has no repeating characters. Confirms ```baseConvert.setAlphabet(str)``` is valid.
+```baseConvert.isUnique(str)```: Returns ```boolean```.  Indicates whether given string has no repeating characters.
 
 ```baseConvert.randomizeAlphabet()```: Returns ```string```. Shuffles current alphabet.
