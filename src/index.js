@@ -38,7 +38,6 @@ module.exports = {
     return shuffled
   },
   encode: function (num) {
-    // String length = 58 (no zero, no uppercase 'O', no 'I', no 'l')
     var _alphabet = this.alphabet
     if (!this.isInteger(num)) {
       throw new Error('The seed number must be an integer > 0')

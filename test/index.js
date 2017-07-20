@@ -2,14 +2,15 @@
 
 var expect = require('chai').expect
 var baseConvert = require('../src/index.js')
+const random = require('random-js')()
 
 describe ('#baseConvert', function () {
-  it ('Encode should output a string', function() {
+  it ('encode() should return a string', function() {
         var result = baseConvert.encode(1234)
         expect (result).to.be.string
   })
 
-  it ('Decode should output a number', function() {
+  it ('decode() should return a number', function() {
         var result = baseConvert.decode('1234')
         expect (result).to.be.a('number')
   })
@@ -28,4 +29,13 @@ describe ('#baseConvert', function () {
         var result = baseConvert.isUnique('aabcdefghijklm')
         expect (result).to.be.false
   })
+
+  it ('getBase() should return a number', function() {
+        var result = baseConvert.getBase()
+        expect (result).to.be.a('number')
+  })
+
+
+
+
 })
