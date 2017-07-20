@@ -36,7 +36,8 @@ baseConvert.decode('d2KM') // 2347247
 
 ```baseConvert.decode(str)```: Returns ```integer```. Decodes a given string value (such as a short URL string) into a number based on the selected encoding alphabet.
 
-```baseConvert.setAlphabet(str)```: Returns ```string```. Assign a new encoding alpahbet and echoes it back. 
+```baseConvert.setAlphabet(str)```: Returns ```string```. Assign a new encoding alpahbet and echoes it back.
+
 ```baseConvert.getAlphabet()```: Returns ```string```. Current encoding alphabet.
 
 ```baseConvert.getBase()```: Returns ```integer```. The length of current encoding alphabet. For example, a 58 character encoding alphabet equals a Base 58 conversion. A 33 character encoding equals a Base 33 conversion.
