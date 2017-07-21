@@ -16,7 +16,7 @@ describe ('#baseConvert', function () {
   })
 
   it ('Default encoding alphabet should be unique', function() {
-        var result = baseConvert.isUnique()
+        var result = baseConvert.isUnique(baseConvert.getAlphabet())
         expect (result).to.be.true
   })
 
@@ -40,10 +40,10 @@ describe ('#baseConvert', function () {
         expect (result).to.be.string
   })
 
-  it ('setAlphabet() should return current encoding alphabet if no value is passed', function() {
-        var result = baseConvert.setAlphabet()
-        expect (result).to.be.string
-  })
+  // it ('setAlphabet() should return current encoding alphabet if no value is passed', function() {
+  //       var result = baseConvert.setAlphabet()
+  //       expect (result).to.be.string
+  // })
 
   it ('setAlphabet() should return the new alphabet ("abcdefghijkl") if a new encoding alphabet is passed', function() {
         var result = baseConvert.setAlphabet('abcdefghijkl')

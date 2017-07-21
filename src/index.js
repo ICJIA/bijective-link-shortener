@@ -4,7 +4,7 @@ module.exports = {
   // Default encoding alphabet.
   alphabet: '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ',
 
-  setAlphabet: function (str = this.alphabet) {
+  setAlphabet: function (str) {
     if (!this.isUnique(str)) throw new Error('String must contain all unique characters')
     this.alphabet = str
     return this.alphabet
@@ -21,7 +21,7 @@ module.exports = {
   isPositive: function (num) {
     return (num > 0)
   },
-  isUnique: function (str = this.alphabet) {
+  isUnique: function (str) {
     var obj = {}
     for (var z = 0; z < str.length; ++z) {
       var ch = str[z]
