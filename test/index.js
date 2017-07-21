@@ -69,6 +69,11 @@ describe ('#baseConvert', function () {
         expect (result).to.be.a.string
   })
 
+  it ('resetAlphabet() should reset to the original default encoding alphabet ("123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ")', function() {
+        var result = baseConvert.resetAlphabet()
+        expect (result).to.equal('123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ')
+  })
+
 
   it ('encode() throws error with a negative number', function() {
         expect(() => baseConvert.encode(-33)).to.throw(Error)

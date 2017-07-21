@@ -38,6 +38,10 @@ module.exports = {
     this.alphabet = shuffled
     return shuffled
   },
+  resetAlphabet: function () {
+    this.alphabet = '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ'
+    return this.alphabet
+  },
   encode: function (num) {
     var alphabet = this.alphabet
     if (!this.isInteger(num)) {
