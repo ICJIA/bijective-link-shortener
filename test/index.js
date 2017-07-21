@@ -40,10 +40,7 @@ describe ('#baseConvert', function () {
         expect (result).to.be.string
   })
 
-  // it ('setAlphabet() should return current encoding alphabet if no value is passed', function() {
-  //       var result = baseConvert.setAlphabet()
-  //       expect (result).to.be.string
-  // })
+
 
   it ('setAlphabet() should return the new alphabet ("abcdefghijkl") if a new encoding alphabet is passed', function() {
         var result = baseConvert.setAlphabet('abcdefghijkl')
@@ -67,11 +64,6 @@ describe ('#baseConvert', function () {
   it ('randomizeAlphabet() should return a string', function() {
         var result = baseConvert.randomizeAlphabet()
         expect (result).to.be.a.string
-  })
-
-  it ('resetAlphabet() should reset to the original default encoding alphabet ("123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ")', function() {
-        var result = baseConvert.resetAlphabet()
-        expect (result).to.equal('123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ')
   })
 
 

@@ -19,6 +19,10 @@ For more on [bijective functions](https://en.wikipedia.org/wiki/Bijection) and l
 npm install bijective-link-shortener -S
 ```
 
+## Demo site
+
+[https://ls.icjia.cloud/](https://ls.icjia.cloud/)
+
 ## Default encoding alphabet
 ```123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ```
 
