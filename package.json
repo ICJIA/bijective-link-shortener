@@ -1,6 +1,6 @@
 {
   "name": "bijective-link-shortener",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Base conversion module to shorten Base 10 numbers to Base 58 (or any other base). Can be used for link shortener.",
   "main": "src/index.js",
   "directories": {
