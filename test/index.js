@@ -35,6 +35,11 @@ describe ('#baseConvert', function () {
         expect (result).to.be.a('number')
   })
 
+  it ('resetAlphabet() should reset alphabet to original Base 58, ordered configuration', function() {
+        var result = baseConvert.resetAlphabet()
+        expect (result).to.be.equal('123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ')
+  })
+
   it ('getAlphabet() should return a string', function() {
         var result = baseConvert.getAlphabet()
         expect (result).to.be.string
