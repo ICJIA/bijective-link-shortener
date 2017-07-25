@@ -12,7 +12,7 @@ For more on [bijective functions](https://en.wikipedia.org/wiki/Bijection) and l
 
 ## Installation
 
-```
+```bash
 npm install bijective-link-shortener -S
 ```
 
@@ -28,7 +28,8 @@ npm install bijective-link-shortener -S
 The default alphabet can be set manually and/or randomized. See API below.
 
 ## Basic Usage with default encoding alphabet
-```
+
+```bash
 const baseConvert = require('bijective-link-shortener')
 
 const databaseId = 2347247
@@ -37,6 +38,7 @@ baseConvert.encode(databaseId) // 'd2KM'
 
 baseConvert.decode('d2KM') // 2347247
 ```
+
 ## API
 ```baseConvert.encode(num)```: Returns ```string```. Encodes a given seed value (such as a unique database ID) into a string based on the selected encoding alphabet.
 
