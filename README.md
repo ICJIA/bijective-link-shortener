@@ -4,6 +4,8 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/ICJIA/bijective-link-shortener/badge.png?branch=master)](https://coveralls.io/github/ICJIA/bijective-link-shortener?branch=master)
 
+[![npm version](https://badge.fury.io/js/bijective-link-shortener.svg)](https://badge.fury.io/js/bijective-link-shortener)
+
 Bijective encode and decode functions to convert between Base 10 and Base 58 (default). I'm using this for a link shortener.
 
 For more on [bijective functions](https://en.wikipedia.org/wiki/Bijection) and link shortening, please see:
